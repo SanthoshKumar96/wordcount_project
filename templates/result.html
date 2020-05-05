@@ -1,0 +1,10 @@
+<h1>Number of word counted is : {{wordlist}}</h1>
+<a href="{%url 'home'%}">Back to Homepage</a>
+<h2>Your text :</h2>
+{{result}}
+<br />
+<h2>Word Count : </h2>
+{% for word, count1 in worddict %}
+<i>{{ word }}</i> - <b>{{ count1 }}</b>
+<br />
+{% endfor %}
